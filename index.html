@@ -39,7 +39,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center me-auto" >
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/logo.png" alt="Logo" width="100" height="100">
@@ -86,23 +86,31 @@
   </header>
 
   <main class="main">
+<style>
+  #hero {
+    background-image: url('assets/img/hero-img.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position:top; /* Center the background image */
+    /* Add any other styles you need for your hero section */
+}
 
+</style>
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section" >
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Grow your business with Vesperr</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" style="color: white">
+            <h1 style="color: white">Grow your business with Vesperr</h1>
+            <p style="color: white">We are team of talented designers making websites with Bootstrap</p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="#about" class="btn-get-started" style="color: white">Get Started</a>
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"></a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img">
             <img src="assets/img/hero-img.jpg" class="img-fluid animated" alt="">
-          </div>
+          </div> -->
         </div>
       </div>
 
