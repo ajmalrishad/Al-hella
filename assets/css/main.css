@@ -659,6 +659,9 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  background-image: url('assets/img/hero-img.jpg');
+  background-size: cover; /* This ensures the image covers the entire background */
+  background-position:top; /* Center the background image */
   width: 100%;
   min-height: 70vh;
   position: relative;
