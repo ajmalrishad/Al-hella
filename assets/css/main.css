@@ -88,7 +88,7 @@ header a{
 .carousel{
   height: 100vh;
   margin-top: 0px;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -150,16 +150,16 @@ header a{
 /* thumbail */
 .thumbnail{
   position: absolute;
-  bottom: 50px;
-  left: 50%;
+  bottom: 10px;
+  left: 65%;
   width: max-content;
   z-index: 100;
   display: flex;
   gap: 20px;
 }
 .thumbnail .item{
-  width: 150px;
-  height: 220px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
   position: relative;
 }
@@ -249,11 +249,11 @@ header a{
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
-  width: 150px;
-  height: 220px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  bottom: 50px;
-  left: 50%;
+  bottom: 10px;
+  left: 65%;
   border-radius: 30px;
   animation: showImage .5s linear 1 forwards;
 }
@@ -326,10 +326,10 @@ header a{
 }
 @keyframes outFrame{
   to{
-      width: 150px;
-      height: 220px;
-      bottom: 50px;
-      left: 50%;
+      width: 100px;
+      height: 100px;
+      bottom: 10px;
+      left: 65%;
       border-radius: 20px;
   }
 }
