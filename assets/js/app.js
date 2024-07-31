@@ -1,3 +1,8 @@
+/**----------------------------------------------
+* Template Name: Al hella
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: Ajmal Rishad
+/-----------------------------------------------**/
 //step 1: get DOM
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');

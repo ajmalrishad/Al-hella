@@ -1,15 +1,8 @@
-/**
-* Template Name: Vesperr
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+/**----------------------------------------------
+* Template Name: Al hella
 * Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+* Author: Ajmal Rishad
+/-----------------------------------------------**
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -393,7 +386,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 } */
-
+#hero {
+  font-family: 'Roboto', 'Poppins', 'Raleway', sans-serif;
+}
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {

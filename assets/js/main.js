@@ -1,10 +1,8 @@
-/**
-* Template Name: Vesperr
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+/**----------------------------------------------
+* Template Name: Al hella
 * Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+* Author: Ajmal Rishad
+/-----------------------------------------------**/
 
 (function() {
   "use strict";
