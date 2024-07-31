@@ -58,7 +58,7 @@ body{
   background-color: #ffffff;
   color: #eee;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 15px;
 }
 a{
   text-decoration: none;
@@ -95,6 +95,7 @@ header a{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: blur(0.5px);
 }
 .carousel .list .item .content{
   position: absolute;
@@ -110,7 +111,7 @@ header a{
 }
 .carousel .list .item .author{
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
@@ -135,7 +136,7 @@ header a{
   font-family: Poppins;
   font-weight: 500;
 }
-.carousel .list .item .buttons button:nth-child(2){
+.carousel .list .item .buttons button:nth-child(1){
   background-color: transparent;
   border: 1px solid #fff;
   color: #eee;
