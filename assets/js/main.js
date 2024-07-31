@@ -207,3 +207,16 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+  window.addEventListener('scroll', function() {
+    var scrollTopButton = document.getElementById('scroll-top');
+    var whatsappIcon = document.getElementById('whatsapp-icon');
+
+    if (window.scrollY > 300) { // Adjust the scroll value as needed
+      scrollTopButton.classList.add('active');
+      whatsappIcon.classList.add('active');
+    } else {
+      scrollTopButton.classList.remove('active');
+      whatsappIcon.classList.remove('active');
+    }
+  });

@@ -885,23 +885,38 @@ h6 {
 # WhatsApp Button
 --------------------------------------------------------------*/
 .whatsapp-icon-wrapper {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 100px; /* Position above Scroll Top button */
+  right: 20px; /* Align with Scroll Top button */
+  z-index: 700; /* Ensure it is above other elements */
+  width: 40px; /* Same size as Scroll Top button */
+  height: 40px; /* Same size as Scroll Top button */
+  border-radius: 4px; /* Same border radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.whatsapp-icon-wrapper:hover {
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
 }
 
 .tooltip-text {
   visibility: hidden;
   width: 120px; /* Adjust as needed */
-  background-color: #333;
+  background-color: #181717c9;
   color: #fff;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
   position: absolute;
-  bottom: 120%; /* Position above the button */
-  left: 50%;
-  margin-left: -150px; /* Center the tooltip */
-  opacity: 0;
+  bottom: 70%; /* Position above the button */
+  left: -170%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0.5;
   transition: opacity 0.3s, bottom 0.3s; /* Smooth appearance */
   z-index: 1000; /* Ensure it is above other content */
 }
@@ -909,21 +924,7 @@ h6 {
 .whatsapp-icon-wrapper:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
-  bottom: 10%; /* Adjust to position the tooltip correctly */
-}
-
-#whatsapp-icon {
-  position: fixed;
-  bottom: 80px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  z-index: 1000; /* Ensures it is above other elements */
-}
-
-#scroll-top {
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  z-index: 500; /* Lower than WhatsApp icon */
+  bottom: 0%; /* Adjust to position the tooltip correctly */
 }
 
 /*--------------------------------------------------------------
@@ -933,9 +934,9 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
+  right: 20px; /* Align with WhatsApp button */
+  bottom: 20px; /* Adjust as needed */
+  z-index: 499; /* Lower than WhatsApp icon */
   background-color: var(--accent-color);
   width: 40px;
   height: 40px;
@@ -954,7 +955,8 @@ h6 {
   color: var(--contrast-color);
 }
 
-.scroll-top.active {
+.scroll-top.active,
+.whatsapp-icon-wrapper.active {
   visibility: visible;
   opacity: 1;
 }
