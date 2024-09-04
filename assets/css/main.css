@@ -1033,8 +1033,13 @@ section,
   position: relative;
 }
 
-.section-title h2 {
+.section-title h2{
   font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+.section-title h4{
+  font-size: 20px;
   font-weight: 700;
   position: relative;
 }
@@ -1047,13 +1052,28 @@ section,
   background: var(--accent-color);
   display: inline-block;
 }
-
 .section-title h2:before {
   margin: 0 15px 10px 0;
 }
 
 .section-title h2:after {
   margin: 0 0 10px 15px;
+}
+
+.section-title h4:before,
+.section-title h4:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--accent-color);
+  display: inline-block;
+}
+.section-title h4:before {
+  margin: 0 5px 1px 0;
+}
+
+.section-title h4:after {
+  margin: 0 0 1px 5px;
 }
 
 .section-title p {
