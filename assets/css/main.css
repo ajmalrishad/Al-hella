@@ -2163,3 +2163,26 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Add this CSS to your stylesheet */
+
+/* No '+' for years and hours */
+.purecounter-years::after,
+.purecounter-hours::after {
+  content: '';
+}
+
+/* '+' for clients and projects */
+.purecounter-clients::after,
+.purecounter-projects::after {
+  content: '+';
+  font-size: 0.8em; /* Adjust size as needed */
+  margin-left: 0.2em; /* Adjust spacing as needed */
+}
+
+/* Custom content for hours */
+.purecounter-hours::after {
+  content: ' x 7';
+  font-size: 1em; /* Adjust size as needed */
+  margin-right: 0.2em; /* Adjust spacing as needed */
+}
