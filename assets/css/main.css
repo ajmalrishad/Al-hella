@@ -1709,9 +1709,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# Project Section
 --------------------------------------------------------------*/
-.team .team-member {
+.project .project-details {
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
@@ -1719,12 +1719,12 @@ section,
   height: 100%;
 }
 
-.team .team-member .member-img {
+.project .project-details .project-img {
   position: relative;
   overflow: hidden;
 }
 
-.team .team-member .social {
+.project .project-details .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -1734,7 +1734,7 @@ section,
   text-align: center;
 }
 
-.team .team-member .social a {
+.project .project-details .social a {
   background: color-mix(in srgb, var(--contrast-color), transparent 25%);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0 3px;
@@ -1747,34 +1747,34 @@ section,
   align-items: center;
 }
 
-.team .team-member .social a:hover {
+.project .project-details .social a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
 }
 
-.team .team-member .social i {
+.project .project-details .social i {
   font-size: 18px;
   line-height: 0;
 }
 
-.team .team-member .member-info {
+.project .project-details .project-info {
   padding: 25px 15px;
 }
 
-.team .team-member .member-info h4 {
+.project .project-details .project-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
 }
 
-.team .team-member .member-info span {
+.project .project-details .project-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.team .team-member:hover .social {
+.project .project-details:hover .social {
   opacity: 1;
   bottom: 15px;
 }
