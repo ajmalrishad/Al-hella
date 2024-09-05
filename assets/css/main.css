@@ -64,7 +64,7 @@ a{
   text-decoration: none;
 }
 header{
-  width: 1340px;
+  width: 100%;
   max-width: 100%;
   margin: auto;
   height: 70px;
@@ -518,7 +518,7 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: rgba(0, 0, 0, .2);
   --heading-color: #eeeeee;
   --nav-color: #ffffff;
   --nav-hover-color: #3498db;
