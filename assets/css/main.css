@@ -105,21 +105,27 @@ header a{
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0 5px 10px #0004;
 }
 .carousel .list .item .author{
   font-weight: bold;
   letter-spacing: 5px;
+  filter: blur(15px);
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
   font-size: 5em;
   font-weight: bold;
   line-height: 1.3em;
+  filter: blur(15px);
 }
 .carousel .list .item .topic{
   color: #3498db;
+  filter: blur(15px);
+}
+.carousel .list .item .des{
+  filter: blur(15px);
 }
 .carousel .list .item .buttons{
   display: grid;
@@ -130,7 +136,7 @@ header a{
 }
 .carousel .list .item .buttons button{
   border: none;
-  background-color: #eee;
+  background-color: #ffffff;
   letter-spacing: 3px;
   font-family: Poppins;
   font-weight: 500;
@@ -138,7 +144,7 @@ header a{
 .carousel .list .item .buttons button:nth-child(1){
   background-color: transparent;
   border: 1px solid #fff;
-  color: #eee;
+  color: #ffffff;
 }
 /* thumbail */
 .thumbnail{
@@ -575,7 +581,7 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-right: 70px;
+    margin-right: 10px;
   }
 
   .navmenu li {
