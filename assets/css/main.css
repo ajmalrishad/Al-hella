@@ -74,7 +74,7 @@ header{
   z-index: 100;
 }
 header a{
-  color: #eee;
+  color: #ffffff;
   margin-right: 40px;
 }
 /* carousel */
@@ -1307,8 +1307,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
+/* Services Section */
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -1316,6 +1315,7 @@ section,
   transition: all ease-in-out 0.4s;
   height: 100%;
   overflow: hidden;
+  position: relative; /* Added for positioning pseudo-elements */
   z-index: 1;
 }
 
@@ -1373,6 +1373,9 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin: 10px 0 0 0;
+  height: 100px; /* Limit height of text */
+  overflow: hidden; /* Hide overflow */
+  transition: height 0.3s ease; /* Smooth transition for height */
 }
 
 .services .service-item:hover:before,
@@ -1390,14 +1393,16 @@ section,
   color: var(--contrast-color);
 }
 
+.services .service-item:hover p {
+  height: auto; /* Show full text on hover */
+}
+
 .services .service-item:hover i {
   background: var(--surface-color);
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Alt Services Section
---------------------------------------------------------------*/
+/* Alt Services Section */
 .alt-services .img {
   border-radius: 8px;
   overflow: hidden;
@@ -1712,6 +1717,9 @@ section,
 .products .products-content:hover img {
   transform: scale(1.1);
 }
+.card-text{
+  padding-top: 20px;
+}
 
 /*--------------------------------------------------------------
 # Project Section
@@ -1727,6 +1735,9 @@ section,
 .project .project-details .project-img {
   position: relative;
   overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  height: 200px; /* Set a fixed height */
+  object-fit: fill; /* This will maintain the aspect ratio */
 }
 
 .project .project-details .social {
@@ -1776,6 +1787,8 @@ section,
   display: block;
   font-size: 13px;
   font-weight: 400;
+  padding-top: 8px;
+  padding-bottom: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
