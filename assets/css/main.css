@@ -1684,7 +1684,7 @@ section,
   left: 0;
   right: 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1737,7 +1737,12 @@ section,
   overflow: hidden;
   width: 100%; /* Adjust as needed */
   height: 200px; /* Set a fixed height */
-  object-fit: fill; /* This will maintain the aspect ratio */
+  object-fit: cover; /* Use cover for better aspect ratio maintenance */
+  transition: transform 0.5s ease; /* Add transition for zoom effect */
+}
+
+.project .project-details:hover .project-img {
+  transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
 }
 
 .project .project-details .social {
