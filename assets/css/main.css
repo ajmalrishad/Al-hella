@@ -112,6 +112,7 @@ header a{
   font-weight: bold;
   letter-spacing: 5px;
   filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
@@ -119,13 +120,16 @@ header a{
   font-weight: bold;
   line-height: 1.3em;
   filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel .list .item .topic{
   color: #3498db;
   filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel .list .item .des{
   filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel .list .item .buttons{
   display: grid;
@@ -143,7 +147,7 @@ header a{
 }
 .carousel .list .item .buttons button:nth-child(1){
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 /* thumbail */
@@ -1716,9 +1720,14 @@ section,
 
 .products .products-content:hover img {
   transform: scale(1.1);
+  object-fit: cover;
 }
 .card-text{
   padding-top: 20px;
+  text-align: center;
+}
+.card-title{
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
